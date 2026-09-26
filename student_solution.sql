@@ -1,5 +1,11 @@
-alter table student 
-  add Email varchar(30); 
-alter table student 
-  add PhoneNumber int(10); 
-desc student;
+USE CollegeDB;
+
+CREATE TABLE IF NOT EXISTS student (
+    StudentID INT PRIMARY KEY,
+    StudentName VARCHAR(100),
+    Age INT,
+    Department VARCHAR(50)
+);
+
+ALTER TABLE student
+ADD COLUMN Email VARCHAR(100);
